@@ -16,6 +16,6 @@ function toogleMode(){
     if(html.classList.contains('light')){
         img.setAttribute('src', './assets/avatar-light.jpg')
     } else{
-        img.setAttribute('src', './assets/avatar.jpg')
+        img.setAttribute('src', './assets/perfil.jpg')
     }
 }
