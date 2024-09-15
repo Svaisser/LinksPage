@@ -8,6 +8,7 @@
     --stroke-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.1);
     --btn-img: url('./assets/moon-stars.svg');
+    --poke-color: invert(100%);
 }
 
 .light{
@@ -16,6 +17,7 @@
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.2);
     --btn-img: url('./assets/sun.svg');
+    --poke-color: invert(0%);
 }
 
 body{
@@ -130,7 +132,7 @@ ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 ion-icon{
@@ -143,6 +145,20 @@ ion-icon{
 }
 
 ion-icon:hover{   
+    background-color:var(--surface-color);
+}
+
+#social-links img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.6s;
+    border-radius: 100%;
+    padding: 16px;
+    filter: var(--poke-color);
+}
+
+#social-links img:hover{   
     background-color:var(--surface-color);
 }
 
